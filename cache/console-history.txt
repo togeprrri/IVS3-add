@@ -1,3 +1,21 @@
+await dist.handOut();
+await dist.IVS3();
+const dist = await Dist.attach("0x56B03666b3B234559032F26909F596600001A41d");
+const Dist = await ethers.getContractFactory("Distributor");
+distr
+await distr.config
+await distr.estimateGas.handOut();
+await distr.handOut();
+await distr.changeIVS3TokenAddress("0xF6EBd1dE707F72E40482072248a553070870F313");
+await distr.IVS3();
+await distr.handOut();
+distr.handOut();
+await distr.handOut();
+await dist.handOut();
+const distr = await Dist.attach("0x0fea33B5d74AB25997c1dED4d44A0F42Bec775c6");
+const Dist = await ethers.getContractFactory("Distributor");
+.editor
+.help
 await dist
 const dist = await Contract.deploy();
 const Contract = await ethers.getContractFactory("Distributor");

@@ -15,13 +15,13 @@ interface Token{
 }
 
 contract Distributor{
-    address IVS3 = 0x802dF8244585e14cC95156B5977d3b79DaAbF9eb;
+    address public IVS3 = 0xF6EBd1dE707F72E40482072248a553070870F313;
 
     function changeIVS3TokenAddress(address _new) external{
         IVS3 = _new;
     }
 
-    Token token = Token(IVS3);
+    Token private token = Token(IVS3);
 
     function handOut() external{
         uint256 _currentBalance = token.balanceOf(address(this));
