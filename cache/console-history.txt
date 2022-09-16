@@ -1,0 +1,4 @@
+await dist
+const dist = await Contract.deploy();
+const Contract = await ethers.getContractFactory("Distributor");
+const [deployer, a1, a2, a3] = await ethers.getSigners();
