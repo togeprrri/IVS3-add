@@ -15,12 +15,16 @@ interface Token{
 }
 
 contract Distributor{
-    address public IVS3 = 0xF6EBd1dE707F72E40482072248a553070870F313;
+    address public IVS3;
+
+    constructor(address _token) {
+        IVS3 = _token;
+    }
 
     function changeIVS3TokenAddress(address _new) external{
         IVS3 = _new;
     }
-
+    
     Token private token = Token(IVS3);
 
     function handOut() external{
