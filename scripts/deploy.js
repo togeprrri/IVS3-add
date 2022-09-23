@@ -9,7 +9,7 @@ async function main() {
   
     const Contract = await ethers.getContractFactory("Distributor");
 
-    const dist = await Contract.deploy();
+    const dist = await Contract.deploy("0x4d9dA7E0038113C03bCd5a6166121c0a3A5a3652");
   
     console.log("Contract address:", dist.address);
   }
